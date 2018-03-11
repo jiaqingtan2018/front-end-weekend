@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第一周</title>
+</head>
+<body>
+	<!-- 标题，段落，链接，图片 -->
+	<h1>第一个标题</h1>
+	<p>第一个段落</p>
+	<a href="http://baidu.com">这是一个链接</a>
+	<img src="logo.jpg" alt="logo" width="400" height="300">
+	<hr>
+
+
+	<!--a标签 -->
+	<a href="logo.jpg" download="logo">下载logo</a>
+	<a href="http://baidu.com" target="_blank">新页面打开</a>
+	<a href="#maodian">链接到锚点</a>
+	<a id="maodian" style="position: absolute;left:0;top: 2000px;">锚点</a>
+	<a href="zhannei.html">站内链接</a>
+	<a href="//techaction.cn">链接到同协议站外网站</a>
+	<a href="mailto:haorooms@126.com?subject=The%20subject%20of%20the%20mail">有邮件地址和邮件主题的链接</a>
+	<a href="text.html">
+		<h3>点击这个区域试一试</h3>
+		<p>让一个区域可点击      this is a text</p>
+	</a>
+	<hr>
+
+
+	<!--换行 空格-->
+	<p>第一行<br>第二行</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我前面有6个空格！</p>
+	<hr>
+
+
+	<!--格式化文本-->
+	<strong>这个文本被加粗了</strong><br>
+	<em>这个文本是斜体</em><br>
+	<del>我被删除了</del><br>
+	<ins>这段文字有下划线</ins><br>
+	这里用一个短的代码：<code>var x+y>=10;</code><br>
+	<p>阿泽说过：<q>a la sou</q></p>
+	<big>放大文字</big><br>
+	<small>缩小文字</small><br>
+	2<sup>上标</sup><br>
+	2<sub>下标</sub>
+	<hr>
+
+
+	<!--简单表格-->
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<hr>
+
+
+	<!--简单表格-->
+	<table border="1">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<hr>
+
+
+	<!--带单元格间距的表格-->
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<hr>
+
+
+    <!--带单元格内边距表格-->
+    <table border="1" cellpadding="10" >
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+
+        <!--带表头表格-->
+    <table border="1" >
+        <tr>
+            <th>编码</th>
+            <th>姓名</th>
+        </tr>
+        <tr>
+        	<td>1</td>
+            <td>张三</td>
+        </tr>
+    </table>
+    <hr>
+
+
+     <!--跨列表格-->
+    <table border="1">
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+     
+
+    <!--跨行表格-->
+    <table border="1">
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>            
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+
+        <!--语义化的表格-->
+    <table border="1">
+        <caption>绩效表格</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>数量</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总计</td>
+                <td>50</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <!--列控制-->
+    <table border="1">
+    	<colgroup>
+    		<col span="2" style="background-color: red">
+    		<col style="background-color: yellow">
+    	</colgroup>
+    	<tr>
+    		<td>1</td>
+    		<td>2</td>
+    		<td>3</td>
+    	</tr>
+    	<tr>
+    		<td>4</td>
+    		<td>5</td>
+    		<td>6</td>
+    	</tr>
+    	<tr>
+    		<td>7</td>
+    		<td>8</td>
+    		<td>9</td>
+    	</tr>
+    </table>
+    <hr>
+
+    <!--无序列表-->
+    <ul>
+    	<li>coffee</li>
+    	<li>tea</li>
+    </ul>
+    <hr>
+
+    <!--有序列表-->
+    <ol>
+    	<li>coffee</li>
+    	<li>tea</li>
+    </ol>
+    <hr>
+
+    <!--自定义列表-->
+    <dl>
+    	<dt>orange</dt><dd>yellow</dd>
+    	<dt>apple</dt><dd>red</dd>
+    </dl>
+    <hr>
+
+    <!--嵌套列表-->
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+            <li>Black tea</li>
+            <li>Green tea
+                <ul>
+                  <li>China</li>
+                  <li>Africa</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <hr>
+
+
+    <!--简单表单-->
+    <form >
+        <p>用户名：<input name="username" type="text" value=""></p>
+        <p>密码：<input name="password" type="password" value=""></p>
+    </form>
+    <hr>
+
+    <!--单选按钮-->
+    <form>
+    	<input type="radio" name="sex" value="">BOY<br>
+    	<input type="radio" name="sex" value="">GIRL
+    </form>
+    <hr>
+
+    <!--复选框-->
+    <form>
+    	<input type="checkbox" name="vehicle" value="">BOY<br>
+    	<input type="checkbox" name="vehicle" value="" >GIRL
+    </form>
+    <hr>
+
+    <!--提交按钮-->
+    <form name="input" action="html_form_action.php" method="get">
+    Username: <input type="text" name="user">
+    <input type="submit" value="Submit">
+    <hr>
+
+    <!--下拉菜单-->
+    <form>
+    	<select name="color">
+    		<option value="yellow">Yellow</option>
+    		<option value="red">Red</option>
+    		<option value="black" >Blcak</option>
+    		<option value="blue" >Blue</option>
+    	</select>
+    </form>
+</form>
+</body>
+</html>

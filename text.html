@@ -2,9 +2,79 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>测试</title>
+<title>Test</title>
 </head>
 <body>
-	<p>这是个测试。</p>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td colspan="2">
+				<img src="logo.png" alt="logo" ><br>
+				<h1>北京欢迎你</h1>
+				<h2>有梦想谁都了不起</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>导航</h3>
+				<ul>
+					<li>
+						<a href="">登录</a>
+					</li>
+					<li>
+						<a href="">注册新用户</a>
+					</li>
+				</ul>
+			</td>
+			<td>
+				<form>
+					<table border="1" cellspacing="0">
+						<th colspan="4">用户注册</th>
+						<tr>
+							<td>用户名：</td>
+							<td><input type="text" name="username"></td>
+							<td colspan="2"><a href="">检测是否有相同用户名</a></td>
+						</tr>
+						<tr>
+							<td>密码：</td>
+							<td><input type="password" name="psaaword">*(至少六位)</td>
+							<td>真实姓名：</td>
+							<td><input type="text" name="name">*</td>
+						</tr>
+						<tr>
+							<td>性别：</td>
+							<td><label><input type="radio" name="sex" value="male">男</label>
+        <label><input type="radio" name="sex" value="female">女</label></td>
+							<td>爱好：</td>
+							<td>
+								<label><input type="checkbox" name="interest" value="reading">读书</label>
+									<label><input type="checkbox" name="interest" value="film">看电影</label>
+							</td>
+						</tr>
+						<tr>
+							<td>证件类型：</td>
+							<td>
+								<select name="people">
+        									<option value="volvo">身份证</option>
+        									<option value="saab">学生证</option>
+        									<option value="fiat">校园卡</option>
+    							</select>
+							</td>
+							<td>证件号码</td>
+							<td>
+								<input type="text" name="haoma">*
+							</td>
+						</tr>
+						<tr colspan="4" >
+							<td><input type="reset" name="重置">
+							<input type="submit" name="注册"></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">&copy;2018艾弗森科技 鲁ICP备15027110号-2</td>
+		</tr>
+	</table>
 </body>
 </html>

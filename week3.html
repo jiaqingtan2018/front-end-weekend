@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <style>
+    .liebiao{
+        float: right;
+        list-style: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .liebiao li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .liebiao a:link, .liebiao a:visited {
+        color: black;
+    }  
+    .liebiao a:hover, .liaobiao a:active {
+        color: blue;
+    }
+    img.tupian{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 290px;
+        clear:right;
+    }
+    .find{
+        text-align: center;
+    }
+    .inputword{
+        width: 500px;
+        height: 30px;
+    }
+    .bbt{
+        width: 100px;
+        height: 36px;
+        margin-left: -5px;
+        vertical-align: bottom;
+        background-color: #3385ff;
+        color: #fff;
+        border: 0;
+    }
+    .camera{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("baidu.camera.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    .camera a:hover {
+        color: blue;
+    }
+    .footer{
+        text-align: center;
+    }
+    .saoma{
+        margin-top: 300px;
+    }
+    .word{
+        font-size: 15px;
+    }
+    .about{
+        list-style: none;
+        font-size: 13px;
+        color: #FFFAFA;
+    }
+    .about li{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .lo{
+        width: 20px;
+        height: 20px;
+    }
+    .lo1{
+        width: 20px;
+        height: 20px;
+    }
+    </style>
+</head>
+<body>
+    <ul class="liebiao">
+        <li><a href="http://news.baidu.com">新闻</a></li>
+        <li><a href="http://hao123.com">hao123</a></li>
+        <li><a href="http://map.baidu.com">地图</a></li>
+        <li><a href="http:/v.baidu.com">视频</a></li>
+        <li><a href="http://tieba.baidu.com">贴吧</a></li>
+        <li><a href="http://xueshu.baidu.com">学术</a></li>
+        <li><a href="">登录</a></li>
+        <li><a href="">设置</a></li>
+    </ul>
+    <img class="tupian" alt="tubiao" src="baidu.gif">
+    <div class="find">
+        <input class="inputword" type="text" name="word">
+        <span class="camera"></span>
+        <input class="bbt" type="button" name="anniu" value="百度一下">
+    </div>
+   
+    <div class="footer">
+        <img class="saoma" src="erweima.png" alt="erweima">
+        <p class="word">百度</p>
+        <ul class="about">
+            <li><a href="">把百度设为主页</a></li>
+            <li><a href="">关于百度</a></li>
+            <li><a href="">About Baidu</a></li>
+            <li><a href="">百度推广</a></li>
+        </ul>
+        <p>
+            &copy;2018 Baidu 
+            <a href="">使用百度前必读</a>
+            <a href="">意见反馈</a>
+            京ICP证030173号
+            <img class="lo" src="lo.png" alt="tubiao1">
+            <a href="">京公网安备11000002000001号</a>
+            <img class="lo1" src="loo.png" alt="tubiao2">
+        </p>
+    </div>
+</body>
+</html>

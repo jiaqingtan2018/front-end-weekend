@@ -1,119 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>简历</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css简历</title>
+    <style>
+    
+    body {
+        background-color: #EBECF1;
+        font-size: 15px;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .container {
+        width: 90%;
+        min-width: 600px;
+        max-width: 1080px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .sidebar {
+        box-sizing: border-box;
+        width: 30%;
+        background-color: #283848;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .main {        
+        width: 70%;
+        margin-left: 31%;
+    }
+    
+    .sidebar .header {
+        background-color: #16222E;
+    }    
+    
+    .sidebar .header h1 {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin: 0;
+    }    
+    
+    .sidebar .portrait {
+        background-color: #23313E;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .sidebar .portrait img {
+        margin-top: 20px;
+        width: 150px;
+    }
+    
+    .sidebar .self-intro {
+        padding: 20px;
+    }
+    
+    .sidebar .qrcode {
+        margin-top: 50px;
+        width: 100px;
+        margin-left: 30%;
+    }    
+    
+    .main-header {
+        overflow: hidden;
+    }
+    .main-header .personal-details,
+    .main-header .contact-details {        
+        color: #fff;
+        float:left;
+        width: 49%;
+        height: 230px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .main-header .personal-details {
+        background-color: #DF4E3D;
+    }
+    
+    .main-header .contact-details {    
+        background-color: #23B495;
+        margin-left: 2%; 
+    }
+    
+    .main .personal-details,
+    .main .contact-details,
+    .main .experience,
+    .main .education,
+    .main .honor {
+        position: relative;
+    }
+    
+    .main .personal-details *,
+    .main .contact-details *,
+    .main .experience *,
+    .main .education *,
+    .main .honor * {
+        position: relative; /* 防止被遮盖*/
+    }
+    
+    .main .icon {
+        position: absolute;
+        width: 15%;
+        max-width: 80px;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .main .experience,
+    .main .education {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    
+    .main .experience .title,
+    .main .education .title {
+        width: 30%;
+        float: left;
+    }
+    
+    .main .experience .title p,
+    .main .education .title p{
+        color: #666;
+    }
+    
+    .main .experience .detail,
+    .main .education .detail {
+        width: 70%;
+        float: left;
+    }
+    
+    .main .experience .detail p,
+    .main .education .detail p{
+        color: #666;
+    }    
+    
+    .main .honor {
+        background-color: #398FCC;
+        color: #fff;
+        margin: 20px 0 0 0;
+        padding: 20px;
+        overflow: hidden;
+    }
+    
+    .main .honor ul {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding-left: 50px;
+        list-style: disc;
+    }
+    
+    </style>
+</head>   
 <body>
-	<div class="container">
-		<div class="sidebar">
-			<div class="header">
-				<h1>个人简历</h1>
-			</div>
-			<div class="portrait">
-			<img src="../images/liyunlong.jpg" alt="portrait">
-			<p>李云龙</p>	
-			</div>
-			<div class="self-intro">
-				<h2>自我介绍</h2>
-				<p>李云龙（1910～1968），都梁小说《亮剑》及由原著改编电视剧的主人公，原型是中将王近山将军（融合了一些钟伟等人的性格和事迹）。</p>
-				<p>曾于1927年参加“黄麻暴动”，后投身革命，长征时期在红四方面军任团长，国共合作时期任国民革命军第18集团军129师386旅独立团团长，解放战争时任中原野战军新二师师长，后新二师转调华东野战军。解放后调任福建省军区C海防军军长。</p>
-			</div>
-			<img src="../images/wang.jpg" class="qrcode" alt="arcode">
-			<ul class="contact">
-				<li><i></i>手机：178535535110</li>
-				<li><i></i>邮箱：297369729@qq.com</li>
-				<li><i></i>QQ:297369729</li>
-			</ul>
-		</div>
-	</div>
-	<div class="main">
-		<div class="main-header">
-			<div class="personal-details">
-				<img src="../images/icon1.jpg" alt="icon1">
-				<h2>基本资料</h2>
-				<ul>
-					<li>出生年月日：1910年10月12日</li>
-					<li>专业：八路军</li>
-					<li>学位：新四军团长</li>
-					<li>日语：专业0级</li>
-					<li>婚姻状况：二婚</li>
-				</ul>
-			</div>
-			<div class="contact-details">
-				<img src="../images/icon2.jpg" alt="icon2">
-				<h2>联系方式</h2>
-				<ul class="contact">
-					<li><i></i>手机：1785355110</li>
-					<li><i></i>邮箱：2973697292@qq.com</li>
-					<li><i></i>QQ：29736729</li>
-				</ul>
-			</div>
-		</div>
-		<div class="experience">
-			<img src="../images/icon3.jpg" alt="icon3">
-			<h2>在职经历</h2>
-			<div class="item">
-				<div class="title">
-				<h3>独立团团长</h3>
-				<p>1901-1906</p>				
-				</div>
-				<div class="detail">
-					<h3>华北战区</h3>
-					<p>华北军区1948年5月，晋察冀军区与晋冀鲁豫军区合并组成华北军区，聂荣臻任司令员，薄一波任政治委员，徐向前任第一副司令员。</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="title">
-					<h3>新四军团长</h3>
-					<p>1907-1910</p>
-				</div>
-				<div class="detail">
-					<h3>华东军区</h3>
-					<p>1947年2月，华东地区的人民解放军统一整编，撤销新四军兼华中军区、华中野战军，山东野战军和山东军区番号，成立华东军区和华东野战军。华东军区由陈毅任司令员。1949年6月，华东军区机关与第三野战军机关合并（保留各自番号），统一指挥野战军和地方部队，军区机关驻南京。</p>
-				</div>
-			</div>
-		</div>
-		<div class="education">
-			<img src="../images/icon4.jpg" alt="icon4">
-			<h2>作战经历</h2>
-			<div class="item">
-				<div class="title">
-					<h3>大闹天宫</h3>
-					<p>1905-1906</p>
-				</div>
-				<div class="detail">
-					<h3>天宫</h3>
-					<p>女蜗补天的晶石遗落人间孕育而生的灵猴，个性率真，不畏权威。因猴子猴孙与九尾狐之死，受牛魔王挑拨而与天庭为敌。</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="title">
-					<h3>大脑盘丝洞</h3>
-					<p>1954-1956</p>
-				</div>
-				<div class="detail">
-					<h3>盘丝洞</h3>
-					<p>盘丝洞在中国古代神话中经常出现，峦头高耸，地脉遥长。峦头高耸接云烟，地脉遥长通海岳。门近石桥，九曲九湾流水顾；园栽桃李，千株千颗斗穠华。藤薜挂悬三五树，芝兰香散万千花。远观洞府欺蓬岛，近睹山林压太华。正是妖仙寻隐处，更无邻舍独成家。</p>
-				</div>
-			</div>
-		</div>
-		<div class="honor">
-			<img src="../images/icon1.jpg" alt="ico1">
-			<h2>获得荣誉</h2>
-			<ul>
-				<li>1901 年 士兵</li>
-				<li>1902 年 排长</li>
-				<li>1903 年 连长</li>
-				<li>1904 年 团长</li>
-			</ul>
-			<ul>
-				<li> 1905 年 旅长</li>
-				<li> 1906 年 军长</li>
-				<li> 1907 年 司令</li>
-				<li> 1908 年 主席</li>
-			</ul>
-		</div>
-	</div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>个人简历</h1>
+            </div>
+            <div class="portrait">
+                <img src="../images/liyunlong.jpg" alt="portrait">
+                <p>李云龙</p>
+            </div>
+            <div class="self-intro">
+                <h2>自我介绍</h2>
+                <p>李云龙（1910～1968），都梁小说《亮剑》及由原著改编电视剧的主人公，原型是中将王近山将军（融合了一些钟伟等人的性格和事迹）。 </p>
+                <p>曾于1927年参加“黄麻暴动”，后投身革命，长征时期在红四方面军任团长，国共合作时期任国民革命军第18集团军129师386旅独立团团长，解放战争时任中原野战军新二师师长，后新二师转调华东野战军。解放后调任福建省军区C海防军军长。</p>
+                <img src="../images/wang.jpg" class="qrcode" alt="arcode">
+                <ul class="contact">
+                    <li><i></i> 手机：178535535110</li>
+                    <li><i></i> 邮箱：297369729@qq.com </li>
+                    <li><i></i> QQ:297369729 </li>                    
+                </ul>
+            </div>
+        </div><!-- /siderbar -->
+        <div class="main">
+            <div class="main-header">
+                <div class="personal-details">
+                    <img src="../images/icon1.jpg" alt="icon1" class="icon">
+                    <h2>基本资料</h2>
+                    <ul>
+                         <li>出生年月日：1910年10月12日</li>
+                         <li>专业：八路军</li>
+                         <li>学位：新四军团长</li>
+                         <li>日语：专业0级</li>
+                         <li>婚姻状况：二婚</li>
+                    </ul>
+                </div>
+                <div class="contact-details">
+                    <img src="../images/icon2.jpg" alt="icon2" class="icon">
+                    <h2>联系方式</h2>
+                    <ul class="contact">
+                        <li><i></i>手机：1785355110</li>
+                        <li><i></i>邮箱：2973697292@qq.com</li>
+                        <li><i></i>QQ：29736729</li>                  
+                    </ul>
+                </div>
+            </div>
+            <div class="experience">
+                <img src="../images/icon3.jpg" alt="icon3" class="icon">  
+                <h2>在职经历</h2>
+                <div class="item">
+                    <div class="title">
+                        <h3>独立团团长</h3>
+                        <p>1901-1906</p>
+                    </div>
+                    <div class="detail">
+                        <h3>华北战区</h3>
+                        <p>华北军区1948年5月，晋察冀军区与晋冀鲁豫军区合并组成华北军区，聂荣臻任司令员，薄一波任政治委员，徐向前任第一副司令员。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3>新四军团长</h3>
+                        <p>1907-1910</p>
+                    </div>
+                    <div class="detail">
+                        <h3>华东军区</h3>
+                        <p>1947年2月，华东地区的人民解放军统一整编，撤销新四军兼华中军区、华中野战军，山东野战军和山东军区番号，成立华东军区和华东野战军。华东军区由陈毅任司令员。1949年6月，华东军区机关与第三野战军机关合并（保留各自番号），统一指挥野战军和地方部队，军区机关驻南京。</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="education">
+                <img src="../images/icon4.jpg" alt="icon4" class="icon"> 
+                <h2>作战经历</h2>
+                <div class="item">
+                    <div class="title">
+                        <h3>大闹天宫</h3>
+                        <p>1905-1906</p>
+                    </div>
+                    <div class="detail">
+                        <h3>天宫</h3>
+                        <p>女蜗补天的晶石遗落人间孕育而生的灵猴，个性率真，不畏权威。因猴子猴孙与九尾狐之死，受牛魔王挑拨而与天庭为敌。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">
+                        <h3>大闹盘丝洞</h3>
+                        <p>1954-1956</p>
+                    </div>
+                    <div class="detail">
+                        <h3>盘丝洞</h3>
+                        <p>盘丝洞在中国古代神话中经常出现，峦头高耸，地脉遥长。峦头高耸接云烟，地脉遥长通海岳。门近石桥，九曲九湾流水顾；园栽桃李，千株千颗斗穠华。藤薜挂悬三五树，芝兰香散万千花。远观洞府欺蓬岛，近睹山林压太华。正是妖仙寻隐处，更无邻舍独成家。</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="honor">            
+                 <img src="../images/icon1.jpg" alt="ico1" class="icon">
+                 <h2>获得荣誉</h2>
+            <ul>
+                <li>1901 年 士兵</li>
+                <li>1902 年 排长</li>
+                <li>1903 年 连长</li>
+                <li>1904 年 团长</li>
+            </ul>
+            <ul>
+                <li> 1905 年 旅长</li>
+                <li> 1906 年 军长</li>
+                <li> 1907 年 司令</li>
+                <li> 1908 年 主席</li>
+            </ul>  
+            </div>            
+        </div><!-- /main -->
+    </div><!-- /container -->
 </body>
 </html>
